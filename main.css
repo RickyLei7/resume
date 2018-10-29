@@ -16,7 +16,7 @@ hr{height: 0;border: none;border-top: 1px solid #dedede;}
 .topNavBar .logo{font-size: 24px;font-family: Arial black;padding-top: 3px;padding-bottom: 3px;}
 .topNavBar .logo .rs{margin-right: 4px;color: #e6686a;}
 .topNavBar .logo .card{color: #9a9da2}
-.banner{height: 515px;background-image: url(./img/wallhaven-678855.jpg);border: 1px solid red;background-position: center center;background-size: cover;}
+.banner{height: 515px;background-image: url(./img/wallhaven-678855.jpg);background-position: center center;background-size: cover;}
 .banner .mask{height:515px;background-color: rgba(0,0,0,0.6)}
 .userCard{max-width: 940px;margin-left: auto;margin-right: auto;background-color: #fff;box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);}
 .userCard .welcome{background-color: #e6686a;color: white;display: inline-block;padding: 4px 16px;line-height: 22px;position: relative;margin-bottom: 10px;}

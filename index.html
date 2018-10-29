@@ -5,204 +5,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ricky Resume</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./loading.css">
     <script src="//at.alicdn.com/t/font_810381_irqa3769pe.js"></script>
     <style type="text/css">
         .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
+        .site-welcome {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #888;
+            z-index: 1;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .site-welcome.active {
+            display: flex;
         }
     </style>
 </head>
 <body>
+<div id="siteWelcome" class="site-welcome active">
+    <div class="loading"></div>
+</div>
 
-    <div class="topNavBar">
-        <div class="topNavBar-inner clearfix">
-        
+<div class="topNavBar">
+    <div class="topNavBar-inner clearfix">
+
         <a href="#" class="logo">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
-        
+
         <nav>
             <ul class="clearfix">
-            <li><a href="#">ABOUT</a></li>        
-            <li><a href="#">SKILLS</a></li>        
-            <li><a href="#">EXPERIENCE</a></li>      
-            <li><a href="#">PRICING</a></li>       
-            <li><a href="#">BLOG</a></li>       
-            <li><a href="#">CALENDAR</a></li>       
-            <li><a href="#">CONATACT</a></li>         
-            <li><a href="#">OTHER</a></li>         
-            </ul>  
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">EXPERIENCE</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CALENDAR</a></li>
+                <li><a href="#">CONATACT</a></li>
+                <li><a href="#">OTHER</a></li>
+            </ul>
         </nav>
-        </div>
-        
     </div>
 
-    <div class="banner">
-        <div class="mask"></div>
-    </div>
+</div>
+
+<div class="banner">
+    <div class="mask"></div>
+</div>
 
 
-    <main>
-        <div class="userCard">
-            <div class="pictureAndText clearfix">
-                <div class="picture">
-                    <img src="./img/bagel.jpg" width="250" height="347" alt=""> 
-                    <!-- <img src="./img/bagel.jpg" width="299" height="347" alt="">  -->
-                </div>
-                <div class="text">
+<main>
+    <div class="userCard">
+        <div class="pictureAndText clearfix">
+            <div class="picture">
+                <img src="./img/bagel.jpg" width="250" height="347" alt="">
+                <!-- <img src="./img/bagel.jpg" width="299" height="347" alt="">  -->
+            </div>
+            <div class="text">
                     <span class="welcome">Hello
                      <span class="triangle"></span>
                     </span>
 
-                    <h1>Ricky Lei</h1>
-                    <p>Web Developer</p>
-                    <hr>
-                    <dl>
-                        <dt>ADDRESS</dt>
-                        <dd>18 Rockbluff Close NW, Calgary AB, T3G 5A9</dd>
-                        <dt>EMAIL</dt>
-                        <dd>RickyLei7@Gmail.com</dd>
-                        <dt>PHONE</dt>
-                        <dd>(403)708-9877</dd>
-                    </dl>
-                </div>   
-            </div>   
-
-            <footer class="media">
-                            <a href="#">
-                                    <svg class="icon" aria-hidden="true">
-                                            <use xlink:href="#icon-github"></use>
-                                        </svg>
-                            </a>
-                            <a href="#">
-                                    <svg class="icon" aria-hidden="true">
-                                            <use xlink:href="#icon-iconblog2"></use>
-                                    </svg>
-                            </a>
-                            <a href="#">
-                                    <svg class="icon" aria-hidden="true">
-                                            <use xlink:href="#icon-linkedin"></use>
-                                    </svg>
-                            </a>
-                            <a href="#">
-                                    <svg class="icon" aria-hidden="true">
-                                            <use xlink:href="#icon-mianshulogo"></use>
-                                    </svg>
-                            </a>
-                            <a href="#">
-                                    <svg class="icon" aria-hidden="true">
-                                            <use xlink:href="#icon-twiiterico"></use>
-                                    </svg>
-                            </a>
-                           
-            </footer>
-                    
-                
-             
-        </div>
-        <p class="downloadResume-wrapper">
-            <a class="downloadResume" href="./RickyResume-IT.pdf" target="_blank" download>DOWNLOAD RESUME</a>
-        </p>
-        
-
-        <p class="selfInstroduction">
-            Hello! I'm Ricky Lei. Web Developer specializing in front end development. Seeking an entry level job position in a front end firm 
-            to build a long-term career by investing the best of my 
-            programming languages knowledge. 
-            
-        </p>
-    </main>
-
-        <section class="skills">
-            <h2>Professional Skills</h2>
-            <ol class="clearfix">
-                <li>
-                    <h5>HTML5&amp;CSS3</h5>
-                    <div class="progressBar">
-                        <div class="progress" style="width:80%"></div>
-                    </div>
-                    
-                </li>
-                <li>
-                    <h5>JavaScript</h5>
-                    <div class="progressBar">
-                        <div class="progress" style="width:90%"></div>
-                    </div>
-                    
-                </li>
-                <li>
-                        <h5>JQuery</h5>
-                        <div class="progressBar">
-                            <div class="progress" style="width:60%"></div>
-                        </div>
-                        
-                </li>
-                <li>
-                        <h5>Vue.js</h5>
-                        <div class="progressBar">
-                            <div class="progress" style="width:70%"></div>
-                        </div>
-                            
-                </li>
-                <li>
-                        <h5>React.js</h5>
-                        <div class="progressBar">
-                            <div class="progress" style="width:80%"></div>
-                        </div>
-                                
-                </li>
-                <li>
-                        <h5>Node.js</h5>
-                        <div class="progressBar">
-                            <div class="progress" style="width60%"></div>
-                        </div>
-                                    
-                </li>
-               
-            </ol>
-        </section>
-
-        <section class="portfolio">
-            <h2>Portfolio</h2>
-            <nav>
-                <ol class="clearfix">
-                    <li id="portfolio1">All</li>
-                    <li id="portfolio2">Framework</li>
-                    <li id="portfolio3">Vanilla JS&amp;CSS</li>
-                </ol>
-                
-                <div id="portfolioBar" class="bar state-3">
-                    <div class="bar-inner"></div>
-                </div>
-            </nav>
-            <script>
-                portfolio1.onclick= function(){
-                    portfolioBar.className='bar state-1'
-                }
-                portfolio2.onclick= function(){
-                    portfolioBar.className='bar state-2'
-                }
-                portfolio3.onclick= function(){
-                    portfolioBar.className='bar state-3'
-                }
-
-            </script>
-            <div class="works" style="height: 597px;">
-                <div class="big" style="top: 0; left: 0;">
-                    <img src="./img/1.jpg" alt="work1">
-                </div>
-                <div class="small" style="top: 0; left: 645px;">
-                    <img src="./img/2.jpg" alt="work2">
-                </div>
-                <div class="small" style="top: 297px; left: 645px;">
-                    <img src="./img/3.jpg" alt="work3">
-                </div>
+                <h1>Ricky Lei</h1>
+                <p>Web Developer</p>
+                <hr>
+                <dl>
+                    <dt>ADDRESS</dt>
+                    <dd>18 Rockbluff Close NW, Calgary AB, T3G 5A9</dd>
+                    <dt>EMAIL</dt>
+                    <dd>RickyLei7@Gmail.com</dd>
+                    <dt>PHONE</dt>
+                    <dd>(403)708-9877</dd>
+                </dl>
             </div>
-        
-        </section>
+        </div>
+
+        <footer class="media">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-iconblog2"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-linkedin"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-mianshulogo"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-twiiterico"></use>
+                </svg>
+            </a>
+
+        </footer>
+
+
+    </div>
+    <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./RickyResume-IT.pdf" target="_blank" download>DOWNLOAD RESUME</a>
+    </p>
+
+
+    <p class="selfInstroduction">
+        Hello! I'm Ricky Lei. Web Developer specializing in front end development. Seeking an entry level job position
+        in a front end firm
+        to build a long-term career by investing the best of my
+        programming languages knowledge.
+
+    </p>
+</main>
+
+<section class="skills">
+    <h2>Professional Skills</h2>
+    <ol class="clearfix">
+        <li>
+            <h5>HTML5&amp;CSS3</h5>
+            <div class="progressBar">
+                <div class="progress" style="width:80%"></div>
+            </div>
+
+        </li>
+        <li>
+            <h5>JavaScript</h5>
+            <div class="progressBar">
+                <div class="progress" style="width:90%"></div>
+            </div>
+
+        </li>
+        <li>
+            <h5>JQuery</h5>
+            <div class="progressBar">
+                <div class="progress" style="width:60%"></div>
+            </div>
+
+        </li>
+        <li>
+            <h5>Vue.js</h5>
+            <div class="progressBar">
+                <div class="progress" style="width:70%"></div>
+            </div>
+
+        </li>
+        <li>
+            <h5>React.js</h5>
+            <div class="progressBar">
+                <div class="progress" style="width:80%"></div>
+            </div>
+
+        </li>
+        <li>
+            <h5>Node.js</h5>
+            <div class="progressBar">
+                <div class="progress" style="width60%"></div>
+            </div>
+
+        </li>
+
+    </ol>
+</section>
+
+<section class="portfolio">
+    <h2>Portfolio</h2>
+    <nav>
+        <ol class="clearfix">
+            <li id="portfolio1">All</li>
+            <li id="portfolio2">Framework</li>
+            <li id="portfolio3">Vanilla JS&amp;CSS</li>
+        </ol>
+
+        <div id="portfolioBar" class="bar state-3">
+            <div class="bar-inner"></div>
+        </div>
+    </nav>
+    <script>
+        portfolio1.onclick = function () {
+            portfolioBar.className = 'bar state-1'
+        }
+        portfolio2.onclick = function () {
+            portfolioBar.className = 'bar state-2'
+        }
+        portfolio3.onclick = function () {
+            portfolioBar.className = 'bar state-3'
+        }
+
+    </script>
+    <div class="works" style="height: 597px;">
+        <div class="big" style="top: 0; left: 0;">
+            <img src="./img/1.jpg" alt="work1">
+        </div>
+        <div class="small" style="top: 0; left: 645px;">
+            <img src="./img/2.jpg" alt="work2">
+        </div>
+        <div class="small" style="top: 297px; left: 645px;">
+            <img src="./img/3.jpg" alt="work3">
+        </div>
+    </div>
+
+</section>
+<script>
+    siteWelcome.classList.remove('active')
+</script>
 </body>
 </html>
