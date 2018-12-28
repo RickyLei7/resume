@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ricky Resume</title>
     <link rel="stylesheet" href="./main.css">
@@ -55,22 +56,26 @@
                 <li>
                     <a href="#siteProject">PORTFOLIO</a>
                     <ul class="subMenu" >
-                        <li>Project1</li>
-                        <li>Project2</li>
-                        <li>Project3</li>
+                        <li><a href="https://github.com/RickyLei7" target="view_window">My Github</a></li>
+
                     </ul>
                 </li>
                 <li>
                     <a href="#siteBlog">BLOG</a>
                     <ul class="subMenu" >
-                        <li>Blog1</li>
-                        <li>Blog2</li>
-                        <li>Blog3</li>
+                        <li><a href="https://rickylei7.github.io/" target="_blank">Ricky's Blog</a></li>
+
                     </ul>
                 </li>
-                <li><a href="#siteCalendar">CALENDAR</a></li>
-                <li><a href="#siteConatact">CONATACT</a></li>
-                <li><a href="#siteOther">OTHER</a></li>
+                <!--<li><a href="#siteCalendar">CALENDAR</a></li>-->
+                <li><a href="#siteConatact">CONATACT</a>
+                    <ul class="subMenu" >
+                        <li><a href="mailto:Rickylei7@gmail.com">Email</a></li>
+                        <li>(403)708-9877</li>
+                    </ul>
+                </li>
+
+                <!--<li><a href="#siteOther">OTHER</a></li>-->
             </ul>
         </nav>
     </div>
@@ -86,7 +91,7 @@
     <div data-x id="siteAbout" class="userCard">
         <div class="pictureAndText clearfix">
             <div class="picture">
-                <img src="./img/bagel.jpg" width="250" height="347" alt="">
+                <img src="./img/myself.jpeg" width="250" height="347" alt="">
                 <!-- <img src="./img/bagel.jpg" width="299" height="347" alt="">  -->
             </div>
             <div class="text">
@@ -95,45 +100,44 @@
                     </span>
 
                 <h1>Ricky Lei</h1>
-                <p>Web Developer</p>
+                <p>A Passionate, Creative, and Devoted</p>
+                <br>
+                <p>Web Front-End Developer</p>
                 <hr>
-                <dl>
-                    <dt>ADDRESS</dt>
-                    <dd>18 Rockbluff Close NW, Calgary AB, T3G 5A9</dd>
-                    <dt>EMAIL</dt>
-                    <dd>RickyLei7@Gmail.com</dd>
-                    <dt>PHONE</dt>
-                    <dd>(403)708-9877</dd>
-                </dl>
+                <a href="mailto:Rickylei7@gmail.com" style="text-decoration: blink">RickyLei7@Gmail.com</a>
+                <br/>
+                <br/>
+                <p>(403)708-9877</p>
+
             </div>
         </div>
 
         <footer class="media">
-            <a href="#">
+            <a href="https://github.com/RickyLei7" target="view_window">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-github"></use>
                 </svg>
             </a>
-            <a href="#">
+            <a href="https://rickylei7.github.io/" target="view_window">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-iconblog2"></use>
                 </svg>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/qi-lei-6337b4124/" target="view_window">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-linkedin"></use>
                 </svg>
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/qi.lei.3" target="view_window">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-mianshulogo"></use>
                 </svg>
             </a>
-            <a href="#">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-twiiterico"></use>
-                </svg>
-            </a>
+            <!--<a href="#">-->
+                <!--<svg class="icon" aria-hidden="true">-->
+                    <!--<use xlink:href="#icon-twiiterico"></use>-->
+                <!--</svg>-->
+            <!--</a>-->
 
         </footer>
 
@@ -157,14 +161,14 @@
     <h2>Professional Skills</h2>
     <ol class="clearfix">
         <li>
-            <h5>HTML5&amp;CSS3</h5>
+            <h5>HTML5</h5>
             <div class="progressBar">
                 <div class="progress" style="width:80%"></div>
             </div>
 
         </li>
         <li>
-            <h5>JavaScript</h5>
+            <h5>CSS</h5>
             <div class="progressBar">
                 <div class="progress" style="width:90%"></div>
             </div>
@@ -178,7 +182,7 @@
 
         </li>
         <li>
-            <h5>Vue.js</h5>
+            <h5>JavaScript</h5>
             <div class="progressBar">
                 <div class="progress" style="width:70%"></div>
             </div>
@@ -206,9 +210,9 @@
     <h2>Portfolio</h2>
     <nav>
         <ol class="clearfix">
-            <li id="portfolio1">All</li>
-            <li id="portfolio2">Framework</li>
-            <li id="portfolio3">Vanilla JS&amp;CSS</li>
+            <li id="portfolio1">navKeyboard</li>
+            <li id="portfolio2">canvas</li>
+            <li id="portfolio3">slideShow</li>
         </ol>
 
         <div id="portfolioBar" class="bar state-3">
